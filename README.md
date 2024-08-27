@@ -18,11 +18,14 @@
     - `test.sh`            测试脚本
   - `user_data/`           用户数据文件夹
     - `model_data/`        存放训练好的模型权重
-      - `model_weights.pth`        训练好的权重
       - `new_model_weights.pth`    训练好的最终权重
     - `tmp_data/`          存放临时代码生成的权重文件夹
 
 ### 注意：
+
+#### 关于文件夹
+
+注意： 除了code文件夹之外，其他文件夹在初始状态下为空。您需要根据项目的进展自行创建和填充这些文件夹
 
 #### 关于数据
 
@@ -143,7 +146,7 @@ $$
 \text{CombinedLoss} = \alpha \cdot \text{MSELoss} + (1 - \alpha) \cdot \text{SSIMLoss}
 $$
 
-其中，$$\alpha\$$是一个权重，用于平衡两种损失的贡献。
+其中，$$\alpha\$$ 是一个权重，用于平衡两种损失的贡献。
 
 ### 训练过程
 
