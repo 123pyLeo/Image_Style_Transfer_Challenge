@@ -146,7 +146,7 @@ $$
 \text{CombinedLoss} = \alpha \cdot \text{MSELoss} + (1 - \alpha) \cdot \text{SSIMLoss}
 $$
 
-其中，$ \alpha $ 是一个权重，用于平衡两种损失的贡献。
+其中，$$ \alpha $$是一个权重，用于平衡两种损失的贡献。
 
 ### 训练过程
 
