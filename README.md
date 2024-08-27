@@ -42,9 +42,11 @@
 提取码：1234
 
 2.为了在测试中能直接使用权重，您需要修改test.py文件。找到第64行，将以下代码：
+
 ```bash
 model.load_state_dict(torch.load('../user_data/tmp_data/new_model_weights.pth'))
 ```
+
 将文件路径改成../user_data/model_data/new_model_weights.pth
 
 
@@ -142,7 +144,7 @@ $$
 \text{CombinedLoss} = \alpha \cdot \text{MSELoss} + (1 - \alpha) \cdot \text{SSIMLoss}
 $$
 
-其中，$$\alpha\ $$是一个权重，用于平衡两种损失的贡献。
+其中，$$\alpha\$$是一个权重，用于平衡两种损失的贡献。
 
 ### 训练过程
 
