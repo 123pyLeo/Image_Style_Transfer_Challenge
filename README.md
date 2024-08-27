@@ -23,14 +23,21 @@
     - `tmp_data/`          存放临时代码生成的权重文件夹
 
 ### 注意：
+
 #### 关于数据
+
 要获取本次大赛的数据集，请按照以下步骤操作：
 
 1.访问以下网址：https://challenge.xfyun.cn/topic/info?type=image-style-transfer&option=ssgy
 2.点击报名比赛，报名成功后，您将能够在赛题数据那下载所需的数据集
 
 #### 关于权重
-model_data文件夹下的权重文件是使用GPU 3080训练得到的。如需直接使用这些权重进行测试，可修改test.py文件中的第64行：
+
+作者提供了使用GPU 3080训练得到的权重文件，您可以通过以下步骤将其应用到您的项目中：
+
+1.下载作者提供的权重文件，并将其放置在项目的model_data文件夹下
+
+2.为了在测试中能直接使用权重，您需要修改test.py文件。找到第64行，将以下代码：
 ```bash
 model.load_state_dict(torch.load('../user_data/tmp_data/new_model_weights.pth'))
 ```
