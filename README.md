@@ -95,8 +95,7 @@ pip install -r requirements.txt
     ```bash
     ./train.sh
     ```
-
-	最后生成的权重文件将保存到tmp_data文件夹下
+    最后生成的权重文件将保存到tmp_data文件夹下
 
 #### 注意：
 在 Linux 环境下， .sh 脚本文件可以直接通过命令行运行。
